@@ -1,0 +1,54 @@
+<div class="container-fluid my-4">
+
+    <div class="card-header">
+        <h2>{{Title}}</h2>
+    </div>
+   <div class="card-body">
+
+    <form (ngSubmit)="editproducts()">
+        <div class="table-responsive">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td><label>Product Code</label> </td>
+                        <td><input type="text" class="form-control" name="pcode" [(ngModel)]="Productitem.productCode"></td>
+                    </tr>
+    
+                    <tr>
+                        <td><label>Product Name</label></td>
+                        <td><input type="text" class="form-control" name="pname"[(ngModel)]="Productitem.productName"></td>
+                    </tr>
+    
+                    <tr>
+                        <td><label>Availability</label></td>
+                        <td><input type="number" class="form-control" name="pavailability" [(ngModel)]="Productitem.availablity"></td>
+                    </tr>
+    
+                    <tr>
+                        <td><label>Price</label></td>
+                        <td><input type="number" class="form-control"  name= "pprice" [(ngModel)]="Productitem.price"></td>
+                    </tr>
+    
+                    <tr>
+                        <td><label>Rating</label></td>
+                        <td><input type="number" class="form-control" name="prate" [(ngModel)]="Productitem.rating" ></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Image URL</label></td>
+                        <td><input type="text" class="form-control" name="pimg" [(ngModel)]="Productitem.imageURL"></td>
+                        
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" class="btn btn-success" value="Edit product"></td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+           
+        </div>
+       </form>
+
+   </div>
+</div>
